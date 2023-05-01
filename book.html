@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="luna.png" alt="lol"  width="100px"  >
+                
+                
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="home.html" id="aa">Home</a></li>
+                    <li><a href="book.html"id="aa">Book now</a></li>
+                    <li><a href="index5.html"id="aa">About us</a></li>
+                    <li><a href="index.html"id="aa">Login</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+    </header>
+    
+        <div class="container">
+          <h1 class="form-title">Booking</h1>
+          <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+            <div class="main-user-info">
+              <div class="user-input-box">
+                <label for="fullName">Full Name</label>
+                <input type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter Full Name" />
+              </div>
+              
+              <div class="user-input-box">
+                <label for="email">Email</label>
+                <input type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter Email"/>
+              </div>
+              <div class="user-input-box">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        placeholder="Enter Phone Number"/>
+                        
+              </div>
+              <div class="user-input-box">
+                <label for="rooms">room</label>
+                <select name="rooms" id="rooms">
+                  <option value="Executive club">Executive club</option>
+                  <option value="The towers">The towers</option>
+                  <option value="Luna one">Luna one</option>
+                  <option value="Grand Residences">Grand Residences</option>
+                </select>
+                
+              </div>
+              <div class="user-input-box">
+                <label for="password">Adults</label>
+                <input type="number"
+                        id="password"
+                        name="adult"
+                        placeholder="No.Of Adults"/>
+              </div>
+              <div class="user-input-box">
+                <label for="confirmPassword">Children</label>
+                <input type="number"
+                        id="confirmPassword"
+                        name="child"
+                        placeholder="No. Of Children"/>
+              </div>
+              <div class="user-input-box">
+                <label for="confirmPassword">Arrival</label>
+                <input type="date"
+                        id="Arrival"
+                        name="Arrival"
+                        placeholder="Arrival"/>
+              </div>
+              <div class="user-input-box">
+                <label for="confirmPassword">Departure</label>
+                <input type="date"
+                        id="Arrival"
+                        name="Arrival"
+                        placeholder="Arrival"/>
+              </div>
+              
+            <div class="gender-details-box">
+              <span class="gender-title">Gender</span>
+              <div class="gender-category">
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label>
+              </div>
+            </div>
+            <div class="form-submit-btn">
+              <input type="submit" value="Register" onclick="myf()">
+            </div>
+          </form>
+        </div>
+      </body>
+    </html>
+    
+    
+
+    <script>
+  
+    function validateForm() {
+    let x = document.forms["myForm"]["fullName"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+        }
+    }
+    function validateForm() {
+    let x = document.forms["myForm"]["email"].value;
+    if (x == "") {
+        alert("email must be filled out");
+        return false;
+        }
+    }
+    function validateForm() {
+    let x = document.forms["myForm"]["phoneNumber"].value;
+    if (x == "") {
+        alert("Phone number must be filled out");
+        return false;
+        }
+    }
+    
+    function validateForm() {
+    let x = document.forms["myForm"]["adult"].value;
+    if (x == "") {
+        alert("Number of adults must be filled out");
+        return false;
+        }
+    }
+    function validateForm() {
+    let x = document.forms["myForm"]["child"].value;
+    if (x == "") {
+        alert("Number of children must be filled out");
+        return false;
+        }
+    }
+
+    function validateForm() {
+    let x = document.forms["myForm"]["Arrival"].value;
+    if (x == "") {
+        alert("Arrival date must be filled out");
+        return false;
+        }
+    }
+
+    function validateForm() {
+    let x = document.forms["myForm"]["Departure"].value;
+    if (x == "") {
+        alert("Departure date must be filled out");
+        return false;
+        }
+    }
+    function myf(){
+        window.location.href = "https://google.com";
+
+    }
+    
+    </script>
+
+    
+</body>
+</html>

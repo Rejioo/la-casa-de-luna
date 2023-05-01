@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    zoom:104%;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/1430677/pexels-photo-1430677.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-1430677.jpg&fm=jpg);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* header */
+.navbar{
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    margin-bottom: 40px;
+    background-color: rgba(3, 3, 3, 0.164);
+}
+.navbar a{
+    transition: transform 0.5s;
+}
+.navbar a:hover{
+    color: rgba(255, 255, 255, 0.89);
+    transform: scale(1.1);
+}
+.logo{
+    margin-left: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav a{
+    color:black;
+    
+
+}
+logo{
+    flex: 1;
+    display : inline-block;
+
+    
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.wrap{
+    position: absolute;
+    left: 62vh;
+    top: 20vh;
+    
+    max-width: 400px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 20px 40px 70px 0 rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 30px;
+    
+}
+
+.btn{
+    display: inline-block;
+background: transparent;
+color: #000000;
+text-align: center;
+padding: 8px 30px;
+margin: 30px auto;
+border-radius: 30px;
+text-decoration: none;
+backdrop-filter: blur(1080px);
+text-shadow: 2px 2px 4px rgba(255,255,255,0.2);
+box-shadow: 3px 3px 3px rgba(10, 2, 10, 0.678);
+
+border-left: 1px solid rgba(255, 255, 255, 0.3);
+border-top: 1px solid rgba(255, 255, 255, 0.3);
+align-items: center;
+width: 50%;
+height: 40px;
+transition: transform 0.5s;
+
+}
+a{
+    transition: transform 0.5s;
+}
+.btn a:hover {
+    text-decoration: underline;
+    }
+h1{
+    font-size:50px;
+    text-align: center;
+    opacity: 0.85;
+    padding-bottom: 20px;
+
+
+}
+label{
+    font-size:20px;
+    color: black;
+    margin-left: 10%;
+}
+input{
+    width:60%;
+    margin-left: 10% ;
+    margin-top: 10px;
+    margin-bottom: 2%;
+    border: none;
+    outline:none;
+    background: transparent;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    
+} 
+p{
+    font-size: 15px;
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+}
+a:link,a:visited{
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.89);
+    transform: scale(1.1);
+    
+}
+.footer{
+    
+    color:#8a8a8a;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+    padding: 60px 0 20px;
+    background: #000000
+  
+    
+
+    
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+.footer-col2 img{
+    position: relative;
+    right : 50px;
+    
+}
+
+ul{
+    list-style: none;
+    
+}
+.applogo{
+    margin-top:20px;
+
+}
+.applogo img{
+    width:140px;
+    
+}
+.menu-icon{
+    width: 28px;
+    margin-left:20px;
+    
+    display:none;
+}
+nav1{
+    flex: 1;
+    text-align: right;
+   
+    
+}
+nav1 ul{
+    display: inline-block;
+    list-style-type: none;
+  
+    
+}
+
+nav1 ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+ 
+    
+}
