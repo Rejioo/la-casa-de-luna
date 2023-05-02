@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
+    <script defer src="script2.js"></script>
+    
 </head>
 <body>
 
@@ -21,7 +23,7 @@
                 <ul id="menuitems">
                     <li><a href="home.html" id="aa">Home</a></li>
                     <li><a href="book.html"id="aa">Book now</a></li>
-                    <li><a href="index5.html"id="aa">About us</a></li>
+                    <li><a href="abt.html"id="aa">About us</a></li>
                     <li><a href="index.html"id="aa">Login</a></li>
                 </ul>
             </nav>
@@ -30,20 +32,43 @@
 
     </header>
     <div class="wrap">
-        <form >
+        <form action="home.html" method="GET">
             <h1>Login</h1>
+
             <label>Username</label>
             
-            <input type="username">
+            <input type="username" id="username" required>
             
             <label>password</label>
-            <input type="password">
-            <a href="home.html" class="btn">Login</a>
-            
+            <input type="password" id="password" required>
+            <input type="checkbox" onclick="myFunction()">Show Password
+
+            <input type="submit" value="LOGIN"/>       
             <p>Don't Have An Account? </p>
             <a href="sign.html" target="_main">Sign up here</a> 
             
     
         </form>
-</body>
+        <!--foooter-->  
+   
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("password");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+            </script>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                offset:400,
+                duration:1000
+              });
+
+            </script>
+</body>     
 </html>

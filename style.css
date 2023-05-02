@@ -90,6 +90,7 @@ nav ul li{
 
 
 .head{
+    margin-top: 30px;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -313,6 +314,12 @@ input:checked + .slide-container .nav label { display: block; }
     .rows {
         display:block;
     }
+    p{
+        font-size:15px;
+    }
+    .rows img{
+        height: 100%
+    }
 
 }
     
@@ -390,5 +397,64 @@ h3,h1,h2,h4{
     color: #121212;
 }
 
-/* form */
 
+.footer{
+      
+    color:#8a8a8a;
+    font-size: 14px;
+    backdrop-filter: blur(10px);
+    padding: 60px 0 20px;
+    background: #000000;
+    padding-left:50px;  
+  
+    
+
+    
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+.footer-col2 img{
+    position: relative;
+    right : 50px;
+    
+}
+
+ul{
+    list-style: none;
+    
+}
+.applogo{
+    margin-top:20px;
+
+}
+.applogo img{
+    width:140px;
+    
+}
+.menu-icon{
+    width: 28px;
+    margin-left:20px;
+    
+    display:none;
+}
+nav1{
+    flex: 1;
+    text-align: right;
+   
+    
+}
+nav1 ul{
+    display: inline-block;
+    list-style-type: none;
+  
+    
+}
+
+nav1 ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}

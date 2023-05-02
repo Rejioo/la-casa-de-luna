@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script1.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 </head>
 <body>
@@ -22,7 +22,7 @@
                 <ul id="menuitems">
                     <li><a href="home.html" id="aa">Home</a></li>
                     <li><a href="book.html"id="aa">Book now</a></li>
-                    <li><a href="index5.html"id="aa">About us</a></li>
+                    <li><a href="abt.html"id="aa">About us</a></li>
                     <li><a href="index.html"id="aa">Login</a></li>
                 </ul>
             </nav>
@@ -33,7 +33,7 @@
     
         <div class="container">
           <h1 class="form-title">Booking</h1>
-          <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+          <form name="myForm" action=""  method="GET">
             <div class="main-user-info">
               <div class="user-input-box">
                 <label for="fullName">Full Name</label>
@@ -71,14 +71,14 @@
               <div class="user-input-box">
                 <label for="password">Adults</label>
                 <input type="number"
-                        id="password"
+                        id="adult"
                         name="adult"
                         placeholder="No.Of Adults"/>
               </div>
               <div class="user-input-box">
                 <label for="confirmPassword">Children</label>
                 <input type="number"
-                        id="confirmPassword"
+                        id="children"
                         name="child"
                         placeholder="No. Of Children"/>
               </div>
@@ -92,7 +92,7 @@
               <div class="user-input-box">
                 <label for="confirmPassword">Departure</label>
                 <input type="date"
-                        id="Arrival"
+                        id="Departure"
                         name="Arrival"
                         placeholder="Arrival"/>
               </div>
@@ -108,8 +108,9 @@
                 <label for="other">Other</label>
               </div>
             </div>
+            <p id="errorMessage" hidden></p>
             <div class="form-submit-btn">
-              <input type="submit" value="Register" onclick="myf()">
+              <input type="submit"  value="submit" >
             </div>
           </form>
         </div>
@@ -118,67 +119,49 @@
     
     
 
-    <script>
-  
+    <!-- <script>
+  onclick="location.href='https://google.com';"
     function validateForm() {
-    let x = document.forms["myForm"]["fullName"].value;
-    if (x == "") {
+      var fn = document.getElementById("fullName");
+    // let fn = document.forms["myForm"]["fullName"].value;
+    let em = document.forms["myForm"]["email"].value;
+    let ph = document.forms["myForm"]["phoneNumber"].value;
+    let a = document.forms["myForm"]["adult"].value;
+    let c = document.forms["myForm"]["child"].value;
+    let ar = document.forms["myForm"]["Arrival"].value;
+    let dp = document.forms["myForm"]["Departure"].value;
+    if (fn == "") {
         alert("Name must be filled out");
         return false;
-        }
-    }
-    function validateForm() {
-    let x = document.forms["myForm"]["email"].value;
-    if (x == "") {
+        }else if (em == "") {
         alert("email must be filled out");
         return false;
-        }
-    }
-    function validateForm() {
-    let x = document.forms["myForm"]["phoneNumber"].value;
-    if (x == "") {
+        }else if (ph == "") {
         alert("Phone number must be filled out");
         return false;
-        }
-    }
-    
-    function validateForm() {
-    let x = document.forms["myForm"]["adult"].value;
-    if (x == "") {
+        }else if (a == "") {
         alert("Number of adults must be filled out");
         return false;
-        }
-    }
-    function validateForm() {
-    let x = document.forms["myForm"]["child"].value;
-    if (x == "") {
+        }else if (c == "") {
         alert("Number of children must be filled out");
         return false;
-        }
-    }
-
-    function validateForm() {
-    let x = document.forms["myForm"]["Arrival"].value;
-    if (x == "") {
+        }else if (ar == "") {
         alert("Arrival date must be filled out");
         return false;
-        }
-    }
-
-    function validateForm() {
-    let x = document.forms["myForm"]["Departure"].value;
-    if (x == "") {
+        }else if (dp == "") {
         alert("Departure date must be filled out");
         return false;
-        }
-    }
-    function myf(){
-        window.location.href = "https://google.com";
 
+        
     }
     
-    </script>
+    }
+   
+    
+    </script> -->
 
     
 </body>
 </html>
+
+

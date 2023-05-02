@@ -61,10 +61,8 @@ nav ul li{
 }
 
 .wrap{
-    position: absolute;
-    left: 62vh;
-    top: 20vh;
-    
+    margin: auto;
+    width: 50%;
     max-width: 400px;
     background: transparent;
     backdrop-filter: blur(10px);
@@ -86,7 +84,7 @@ form{
     
 }
 
-.btn{
+input[type=submit]{
     display: inline-block;
 background: transparent;
 color: #000000;
@@ -106,6 +104,11 @@ width: 50%;
 height: 40px;
 transition: transform 0.5s;
 
+}
+input[type="checkbox"]{
+    position: relative;
+    right: 21px;
+    top:22px;
 }
 a{
     transition: transform 0.5s;
