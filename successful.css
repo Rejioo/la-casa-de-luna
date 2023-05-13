@@ -1,0 +1,31 @@
+body {
+	background-color:
+rgb(218, 230, 173);
+	
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 50%;
+	padding: 50px;
+        background-color: rgb(50, 56, 58);
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	color: red;
+	font-size: 4em;
+}
+
+p {
+	color: #000080;
+	font-size: 2em;
+}
+.tenor-gif-embed{
+	mix-blend-mode: darken;
+}
+
