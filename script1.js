@@ -13,35 +13,35 @@
 //     const errors = [];
 
 //     if(fn.value.trim() === ""){
-//         errors.push("Name required")
+//         alert("Name required")
 //     }
     
 //     if(em.value.trim() === ""){
-//         errors.push("email required")
+//         alert("email required")
 //     }
 
 //     if(ph.value.trim() === ""){
-//         errors.push("phone number required")
+//         alert("phone number required")
 //     }
 
 //     if(room.value.trim() === ""){
-//         errors.push("rooms should be selected")
+//         alert("rooms should be selected")
 //     }
 
 //     if(a.value.trim() === ""){
-//         errors.push("no. of adults must be specified")
+//         alert("no. of adults must be specified")
 //     }
 
 //     if(c.value.trim() === ""){
-//         errors.push("no. of children must be specified")
+//         alert("no. of children must be specified")
 //     }
 
 //     if(!ar){
-//         errors.push("Arrival date must be specified")
+//         alert("Arrival date must be specified")
 //     }
 
 //     if(!dp){
-//         errors.push("Departure date must be specified")
+//         alert("Departure date must be specified")
 //     }
 //     if(errors.length > 0){
 //         e.preventDefault();
@@ -54,7 +54,8 @@
 
    
 // })
-const fn = document.getElementById("fullName");
+function val(){
+    const fn = document.getElementById("fullName");
 const em = document.getElementById("email");
 const ph = document.getElementById("phoneNumber");
 const room = document.getElementById("rooms");
@@ -62,48 +63,61 @@ const a = document.getElementById("adult");
 const c = document.getElementById("children");
 const ar = document.getElementById("Arrival");
 const dp = document.getElementById("Departure");
-const form = document.querySelector("form");
-const errorMessage = document.getElementById("errorMessage");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    const errors = [];
+
+
 
     if(fn.value.trim() === ""){
-        errors.push("Name required")
+        alert("Name required")
+        return false;
     }
     
     if(em.value.trim() === ""){
-        errors.push("email required")
+        alert("email required")
+        return false;
+
     }
 
     if(ph.value.trim() === ""){
-        errors.push("phone number required")
+        alert("phone number required")
+        return false;
+
     }
 
     if(room.value.trim() === ""){
-        errors.push("rooms should be selected")
+        alert("rooms should be selected")
+        return false;
+
     }
 
     if(a.value.trim() === ""){
-        errors.push("no. of adults must be specified")
+        alert("no. of adults must be specified")
+        return false;
+
     }
 
     if(c.value.trim() === ""){
-        errors.push("no. of children must be specified")
+        alert("no. of children must be specified")
+        return false;
+
     }
 
     if(!ar.value){
-        errors.push("Arrival date must be specified")
+        alert("Arrival date must be specified")
+        return false;
+
     }
 
     if(!dp.value){
-        errors.push("Departure date must be specified")
+        alert("Departure date must be specified")
+        return false;
+
     }
-    if(errors.length > 0){
-        errorMessage.removeAttribute('hidden');
-        errorMessage.innerHTML = errors.join(', ');
-    } else {
+   
+     else {
         form.submit(); // Submit the form if there are no errors
+        return true;
+
     }
-});
+
+}
